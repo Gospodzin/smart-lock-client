@@ -10,16 +10,25 @@
         android:layout_height="wrap_content"
         android:text="Open"
         android:id="@+id/open_button"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="142dp" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Close"
         android:id="@+id/close_button"
+        android:layout_marginTop="33dp"
         android:layout_below="@+id/open_button"
+        android:layout_alignLeft="@+id/open_button"
+        android:layout_alignStart="@+id/open_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:id="@+id/statusTextView"
+        android:layout_above="@+id/open_button"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="94dp" />
+        android:layout_marginBottom="47dp" />
 </RelativeLayout>

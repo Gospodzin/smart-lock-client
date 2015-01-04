@@ -3,6 +3,7 @@
 
     <string name="app_name">Smart Lock</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_set_ip">Ustaw IP</string>
+    <string name="action_register">Zarejestruj</string>
 
 </resources>
