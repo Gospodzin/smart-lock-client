@@ -1,12 +1,9 @@
 package com.stak.smartlock.security;
 
-import android.util.Log;
-
 import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 
-import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
 /**
@@ -30,6 +27,5 @@ public class X509TrustManagerImpl implements X509TrustManager {
     public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
         Certificate cert = chain[0];
         securityHelper.createTrustStore(cert);
-        Log.i("", "");
     }
 }

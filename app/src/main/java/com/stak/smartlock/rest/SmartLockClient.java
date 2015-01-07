@@ -38,10 +38,8 @@ public class SmartLockClient {
         try {
             String addr = host + ":" + port;
 
-            Client client = createClient();
-
             clRegisterResource = new ClientResource("https://" + addr + "/confirm");
-            clRegisterResource.setNext(client);
+            clRegisterResource.setNext(createClient());
             registerResource = clRegisterResource.wrap(RegisterResource.class);
 
             clSmartLockResource = new ClientResource("https://"+ addr + "/lock");
